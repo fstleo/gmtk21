@@ -1,15 +1,14 @@
-using System;
 using UnityEngine;
 
-public class MovingForward : MonoBehaviour
+public class ControlledMove : MonoBehaviour
 {
-
     private Rigidbody _rigidbody;
     private Transform _transform;
 
     [SerializeField]
     private float _speed;
 
+    private Vector3 _move;
 
     private void Awake()
     {
@@ -19,7 +18,10 @@ public class MovingForward : MonoBehaviour
 
     private void FixedUpdate()
     {
-        var move = _transform.forward * (_speed * Time.fixedDeltaTime);
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+        
+        var move = new Vector3(h, 0, v).normalized * (_speed * Time.fixedDeltaTime);
         _rigidbody.MovePosition(_rigidbody.position + move);
     }
 }
