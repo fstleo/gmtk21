@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public enum SoundId
 {
-    Click
+    Click,
+    Bark
 }
 
 public class SoundsManager : Singletone<SoundsManager>
@@ -13,9 +15,9 @@ public class SoundsManager : Singletone<SoundsManager>
     private class Sound
     {
         [SerializeField] private SoundId _id;
-        [SerializeField] private AudioClip _clip;
+        [SerializeField] private AudioClip [] _clips;
 
-        public AudioClip Clip => _clip;
+        public AudioClip [] Clips => _clips;
 
         public SoundId ID => _id;
     }
@@ -41,21 +43,22 @@ public class SoundsManager : Singletone<SoundsManager>
     [SerializeField] 
     private Sound[] _clips;
 
-    private Dictionary<SoundId, AudioClip> _audioClips = new Dictionary<SoundId, AudioClip>();
+    private Dictionary<SoundId, AudioClip[]> _audioClips = new Dictionary<SoundId, AudioClip[]>();
     
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         foreach (var audio in _clips)
         {
-            _audioClips.Add(audio.ID, audio.Clip);
+            _audioClips.Add(audio.ID, audio.Clips);
         }
     }
 
     public void PlaySound(SoundId id)
     {
-        if (_audioClips.TryGetValue(id, out var clip))
+        if (_audioClips.TryGetValue(id, out var clips))
         {
-            _soundsSource.PlayOneShot(clip);
+            _soundsSource.PlayOneShot(clips[Random.Range(0, clips.Length)]);
         }
     }
     

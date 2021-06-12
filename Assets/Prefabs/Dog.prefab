@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 1495188342012166110}
   - component: {fileID: 1495188342012166111}
   - component: {fileID: 1495188342012166109}
+  - component: {fileID: 6223489881384939520}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Untagged
@@ -132,6 +133,7 @@ MonoBehaviour:
   _speed: 10
   _target: {fileID: 0}
   _maxDistance: 10
+  _animator: {fileID: 0}
 --- !u!54 &1495188342012166109
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -148,6 +150,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6223489881384939520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495188342012166106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69595cddd1d747b1a20a69a3878f4542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _chance: 0.05
 --- !u!1 &1836207488007951649
 GameObject:
   m_ObjectHideFlags: 0

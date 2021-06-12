@@ -158,7 +158,16 @@ MonoBehaviour:
   _musicSource: {fileID: 352762321}
   _clips:
   - _id: 0
-    _clip: {fileID: 8300000, guid: d1e02e7761bafe44ca52fcbbffd74539, type: 3}
+    _clips:
+    - {fileID: 8300000, guid: d1e02e7761bafe44ca52fcbbffd74539, type: 3}
+  - _id: 1
+    _clips:
+    - {fileID: 8300000, guid: 48cee21a9943c3c4c9e5607b5ccd7fec, type: 3}
+    - {fileID: 8300000, guid: d1664a492efa9524fa3967117b484765, type: 3}
+    - {fileID: 8300000, guid: 2bf23654567b34e4e90d4c8e41e19fe1, type: 3}
+    - {fileID: 8300000, guid: 9001b4516fe7156479238567214bb199, type: 3}
+    - {fileID: 8300000, guid: 941b6386cebeb2d4789cbaf44504b18d, type: 3}
+    - {fileID: 8300000, guid: 5c007b9d01e4a4d4981903962ba3f5d2, type: 3}
 --- !u!82 &352762321
 AudioSource:
   m_ObjectHideFlags: 0
@@ -169,11 +178,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f24b1f0bbc8a4ea4883e27f8ec91cb04, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
