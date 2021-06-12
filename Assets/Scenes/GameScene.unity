@@ -198,6 +198,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5395212702230132141, guid: 97cac02b1bc47b442b806f2520dff542, type: 3}
   m_PrefabInstance: {fileID: 455046370}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &455046373 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8372179107490440536, guid: 97cac02b1bc47b442b806f2520dff542, type: 3}
+  m_PrefabInstance: {fileID: 455046370}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,6 +352,10 @@ PrefabInstance:
       value: LeashRender
       objectReference: {fileID: 0}
     - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
+      propertyPath: _line
+      value: 
+      objectReference: {fileID: 2038591403}
+    - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
       propertyPath: LeashStart
       value: 
       objectReference: {fileID: 1937633456}
@@ -354,6 +363,14 @@ PrefabInstance:
       propertyPath: LeashTarget
       value: 
       objectReference: {fileID: 455046372}
+    - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
+      propertyPath: _leashStart
+      value: 
+      objectReference: {fileID: 1937633460}
+    - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
+      propertyPath: _leashTarget
+      value: 
+      objectReference: {fileID: 455046373}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07df5264140998447b102c306f8c24e8, type: 3}
 --- !u!1 &963194225
@@ -453,7 +470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 1937633460}
-  _offset: {x: 0, y: 10, z: -15}
+  _offset: {x: 0, y: 10, z: -20}
 --- !u!1 &974595249
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,7 +754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251339145}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -53.742626, y: 0.95, z: -22.44738}
+  m_LocalPosition: {x: -53.742626, y: 0.95, z: -34.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1019,6 +1036,11 @@ GameObject:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1495188342012166110, guid: ec65050ffe763b548a64b1202c8c79c0, type: 3}
   m_PrefabInstance: {fileID: 1495188343901474666}
+  m_PrefabAsset: {fileID: 0}
+--- !u!120 &2038591403 stripped
+LineRenderer:
+  m_CorrespondingSourceObject: {fileID: 2050752549396459898, guid: 07df5264140998447b102c306f8c24e8, type: 3}
+  m_PrefabInstance: {fileID: 862212161}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2137701766
 GameObject:

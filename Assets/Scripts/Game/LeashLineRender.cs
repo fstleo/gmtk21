@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class LeashLineRender : MonoBehaviour
 {
-    public GameObject LeashStart;
-    public GameObject LeashTarget;
+    [SerializeField]
+    private Transform _leashStart;
+    
+    [SerializeField]
+    private Transform _leashTarget;
 
-    public LineRenderer line;
+    [SerializeField]
+    private LineRenderer _line;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        line.SetPosition(0, LeashStart.transform.position);
-        line.SetPosition(1, LeashTarget.transform.position);
+        _line.SetPosition(0, _leashStart.position);
+        _line.SetPosition(1, _leashTarget.position);
+        Color c = Color.Lerp(Color.green, Color.red, (_leashTarget.position - _leashStart.position).magnitude / 10f);
+        _line.startColor = c;
+        _line.endColor = c;
     }
 }
