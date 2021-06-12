@@ -38,6 +38,7 @@ public class ControlledMove : MonoBehaviour
         if ((_rigidbody.position + move - _target.position).sqrMagnitude < _maxDistance * _maxDistance)
         {
             _rigidbody.MovePosition(_rigidbody.position + move);
+            _transform.forward = move;
         }
         else
         {
