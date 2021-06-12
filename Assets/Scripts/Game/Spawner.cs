@@ -1,6 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
 {
@@ -31,6 +31,8 @@ public class Spawner : MonoBehaviour
 
     private void Spawn()
     {
-        Instantiate(_prefab, Vector3.Lerp(_from.position, _to.position, Random.Range(0f, 1f)), Quaternion.identity).transform.forward = _from.forward;
+        var spawnedGuy = Instantiate(_prefab, Vector3.Lerp(_from.position, _to.position, Random.Range(0f, 1f)), Quaternion.identity);
+        spawnedGuy.transform.forward = _from.forward;
+        spawnedGuy.AddComponent<DestroyAfter>();
     }
 }
