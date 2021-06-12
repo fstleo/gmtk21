@@ -27,13 +27,13 @@ public class MainScreen : Screen
 
     private void StartInfiniteMode()
     {
-        SceneManager.LoadScene("InfiniteMode");
+        SceneManager.LoadScene(1);
         ScreenManager.Instance.Open(ScreenType.Game);
     }
 
     private void StartGame()
     {
-        SceneManager.LoadScene("LevelTest");
+        SceneManager.LoadScene(2);
         ScreenManager.Instance.Open(ScreenType.Game);
     }
     
