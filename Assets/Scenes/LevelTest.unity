@@ -314,6 +314,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325565143}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &423098181 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 97026492212364026, guid: ec65050ffe763b548a64b1202c8c79c0, type: 3}
+  m_PrefabInstance: {fileID: 1495188343901474666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &426922481
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,6 +825,14 @@ PrefabInstance:
     - target: {fileID: 2050752549396459896, guid: 07df5264140998447b102c306f8c24e8, type: 3}
       propertyPath: m_Name
       value: LeashRender
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050752549396459898, guid: 07df5264140998447b102c306f8c24e8, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 0.4156863
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050752549396459898, guid: 07df5264140998447b102c306f8c24e8, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.r
+      value: 0.4156863
       objectReference: {fileID: 0}
     - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
       propertyPath: _line
@@ -2878,6 +2891,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 455046371}
     - target: {fileID: 1495188342012166111, guid: ec65050ffe763b548a64b1202c8c79c0, type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 423098181}
+    - target: {fileID: 1495188342012166111, guid: ec65050ffe763b548a64b1202c8c79c0, type: 3}
       propertyPath: _maxDistance
       value: 4
       objectReference: {fileID: 0}
@@ -3042,3 +3059,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46e6c1ef0bac1844b80f0730ec0ca6b8, type: 3}
+--- !u!1 &8655581833158825714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6025123197674163762, guid: 127e88e82065e434f86c13b3e21b9f47, type: 3}
+  m_PrefabInstance: {fileID: 3135425019255199936}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8655581833158825715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8655581833158825714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6857fbb726132ef4bb897e3565d7c433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
