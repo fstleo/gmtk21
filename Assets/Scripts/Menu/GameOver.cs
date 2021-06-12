@@ -19,7 +19,7 @@ public class GameOver : Screen
 
     private void RestartGame()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         ScreenManager.Instance.Open(ScreenType.Game);
         Time.timeScale = 1f;
     }

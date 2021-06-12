@@ -840,6 +840,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1937633456}
     - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
+      propertyPath: _maxLength
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
       propertyPath: LeashTarget
       value: 
       objectReference: {fileID: 455046372}
