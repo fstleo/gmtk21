@@ -11,16 +11,26 @@ public class MainScreen : Screen
     
     [SerializeField]
     private Button _options;
+    
+    [SerializeField]
+    private Button _infiniteMode;
 
     protected override void OnOpen()
     {
         _startGame.onClick.AddListener(StartGame);
         _options.onClick.AddListener(OpenOptions);
+        _infiniteMode.onClick.AddListener(StartInfiniteMode);
+    }
+
+    private void StartInfiniteMode()
+    {
+        SceneManager.LoadScene("InfiniteMode");
+        ScreenManager.Instance.Open(ScreenType.Game);
     }
 
     private void StartGame()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("LevelTest");
         ScreenManager.Instance.Open(ScreenType.Game);
     }
     
@@ -34,5 +44,6 @@ public class MainScreen : Screen
     {
         _startGame.onClick.RemoveListener(StartGame);
         _options.onClick.RemoveListener(OpenOptions);
+        _infiniteMode.onClick.RemoveListener(StartInfiniteMode);
     }
 }

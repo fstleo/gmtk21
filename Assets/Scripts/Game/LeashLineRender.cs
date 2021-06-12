@@ -19,7 +19,7 @@ public class LeashLineRender : MonoBehaviour
     {
         _line.SetPosition(0, _leashStart.position);
         _line.SetPosition(1, _leashTarget.position);
-        Color c = Color.Lerp(Color.green, Color.red, (_leashTarget.position - _leashStart.position).magnitude / _maxLength);
+        var c = Color.Lerp(Color.green, Color.red, (_leashTarget.position - _leashStart.position).magnitude / _maxLength);
         _line.startColor = c;
         _line.endColor = c;
     }

@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-public class MovingForward : MonoBehaviour
+public class SideMoving : MonoBehaviour
 {
 
     private Rigidbody _rigidbody;
@@ -20,6 +19,7 @@ public class MovingForward : MonoBehaviour
     private void FixedUpdate()
     {
         var move = _transform.forward * (_speed * Time.fixedDeltaTime);
-        _rigidbody.MovePosition(_rigidbody.position + move);
+        
+        _rigidbody.MovePosition(_rigidbody.position + new Vector3(move.x, 0, 0));
     }
 }

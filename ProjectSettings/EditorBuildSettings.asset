@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
+    path: Assets/Scenes/InfiniteMode.unity
     guid: b9dfcd6fa9da3944792f40859fcbb87d
+  - enabled: 1
+    path: Assets/Scenes/LevelTest.unity
+    guid: bfb847ddcb4ad1040ade820b4d4b30ba
   m_configObjects: {}
