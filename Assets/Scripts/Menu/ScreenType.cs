@@ -5,5 +5,6 @@ public enum ScreenType
     GameOver,
     Options,
     WinLevel,
-    GamePause
+    GamePause,
+    InfiniteLevel
 }
