@@ -26,8 +26,9 @@ public class ScreenManager : Singletone<ScreenManager>
     private Screen _currentScreen;
 
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         foreach (var screen in _screensPresets)
         {
             _screens.Add(screen.ID, screen.Prefab);
