@@ -409,6 +409,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426922481}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &436822338 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3424146364999459287, guid: 97cac02b1bc47b442b806f2520dff542, type: 3}
+  m_PrefabInstance: {fileID: 455046370}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &455046370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -482,6 +487,35 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 946671275445202793, guid: 97cac02b1bc47b442b806f2520dff542, type: 3}
   m_PrefabInstance: {fileID: 455046370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &455046372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4000410077914092743, guid: 97cac02b1bc47b442b806f2520dff542, type: 3}
+  m_PrefabInstance: {fileID: 455046370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &455046373
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455046372}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cea1a19b99cfb284ab4ba3a81462b688, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &655845462 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1981436198118974665, guid: ec65050ffe763b548a64b1202c8c79c0, type: 3}
+  m_PrefabInstance: {fileID: 1495188343901474666}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
@@ -840,11 +874,11 @@ PrefabInstance:
     - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
       propertyPath: _leashStart
       value: 
-      objectReference: {fileID: 2072104551}
+      objectReference: {fileID: 436822338}
     - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
       propertyPath: _leashTarget
       value: 
-      objectReference: {fileID: 1937633460}
+      objectReference: {fileID: 655845462}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07df5264140998447b102c306f8c24e8, type: 3}
 --- !u!1 &877315949
@@ -2753,11 +2787,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1495188342012166110, guid: ec65050ffe763b548a64b1202c8c79c0, type: 3}
   m_PrefabInstance: {fileID: 1495188343901474666}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2072104551 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8372179107490440536, guid: 97cac02b1bc47b442b806f2520dff542, type: 3}
-  m_PrefabInstance: {fileID: 455046370}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2129185734
 GameObject:
   m_ObjectHideFlags: 0
@@ -2943,6 +2972,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 177037941649270715, guid: ec65050ffe763b548a64b1202c8c79c0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1495188342012166106, guid: ec65050ffe763b548a64b1202c8c79c0, type: 3}
       propertyPath: m_Name
       value: Dog
@@ -2993,7 +3026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1495188342012166111, guid: ec65050ffe763b548a64b1202c8c79c0, type: 3}
       propertyPath: _speed
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1495188342012166111, guid: ec65050ffe763b548a64b1202c8c79c0, type: 3}
       propertyPath: _target

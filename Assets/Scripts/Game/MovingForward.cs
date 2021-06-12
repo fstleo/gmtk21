@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class MovingForward : MonoBehaviour
@@ -10,6 +9,7 @@ public class MovingForward : MonoBehaviour
     [SerializeField]
     private float _speed;
 
+    [SerializeField] private bool _log;
 
     private void Awake()
     {
@@ -20,6 +20,8 @@ public class MovingForward : MonoBehaviour
     private void FixedUpdate()
     {
         var move = _transform.forward * (_speed * Time.fixedDeltaTime);
+        if (_log) 
+        Debug.LogError(move);
         _rigidbody.MovePosition(_rigidbody.position + move);
     }
 }
