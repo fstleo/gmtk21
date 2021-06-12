@@ -484,6 +484,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5395212702230132141, guid: 97cac02b1bc47b442b806f2520dff542, type: 3}
   m_PrefabInstance: {fileID: 455046370}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &570560942 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 700521447036405062, guid: 97cac02b1bc47b442b806f2520dff542, type: 3}
+  m_PrefabInstance: {fileID: 455046370}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,13 +828,29 @@ PrefabInstance:
       value: LeashRender
       objectReference: {fileID: 0}
     - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
+      propertyPath: _line
+      value: 
+      objectReference: {fileID: 1272283241}
+    - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
       propertyPath: LeashStart
       value: 
       objectReference: {fileID: 1937633456}
     - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
+      propertyPath: _maxLength
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
       propertyPath: LeashTarget
       value: 
       objectReference: {fileID: 455046372}
+    - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
+      propertyPath: _leashStart
+      value: 
+      objectReference: {fileID: 1937633460}
+    - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
+      propertyPath: _leashTarget
+      value: 
+      objectReference: {fileID: 570560942}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07df5264140998447b102c306f8c24e8, type: 3}
 --- !u!1 &963194225
@@ -1504,6 +1525,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256499094}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!120 &1272283241 stripped
+LineRenderer:
+  m_CorrespondingSourceObject: {fileID: 2050752549396459898, guid: 07df5264140998447b102c306f8c24e8, type: 3}
+  m_PrefabInstance: {fileID: 862212161}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1323834993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2535,7 +2561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1495188342012166111, guid: ec65050ffe763b548a64b1202c8c79c0, type: 3}
       propertyPath: _speed
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1495188342012166111, guid: ec65050ffe763b548a64b1202c8c79c0, type: 3}
       propertyPath: _target
