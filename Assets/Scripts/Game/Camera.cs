@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Camera : MonoBehaviour
@@ -9,14 +6,19 @@ public class Camera : MonoBehaviour
     private Transform _target;
 
     [SerializeField]
-    private float _height;
+    private Vector3 _offset;
 
-    [SerializeField]
-    private float _distance;
-    
+    private Transform _transform;
+
+
+    private void Awake()
+    {
+        _transform = transform;
+    }
+
     private void LateUpdate()
     {
-        transform.LookAt(_target);
-        transform.position = Vector3.Lerp(transform.position, _target.position - transform.forward * _distance + Vector3.up * _height, 0.5f);
+        _transform.LookAt(_target);
+        _transform.position = Vector3.Lerp(_transform.position, _target.position + _offset, 3f*Time.deltaTime);
     }
 }

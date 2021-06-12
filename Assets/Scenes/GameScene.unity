@@ -448,8 +448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 1937633460}
-  _height: 4
-  _distance: 5
+  _offset: {x: 0, y: 10, z: -15}
 --- !u!1 &1069893506 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8445598991022076152, guid: 97cac02b1bc47b442b806f2520dff542, type: 3}
