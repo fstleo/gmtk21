@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainScreen : Screen
@@ -19,7 +20,8 @@ public class MainScreen : Screen
 
     private void StartGame()
     {
-        
+        SceneManager.LoadScene("GameScene");
+        ScreenManager.Instance.Open(ScreenType.Game);
     }
     
     private void OpenOptions()

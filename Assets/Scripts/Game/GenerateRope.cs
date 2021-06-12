@@ -32,4 +32,6 @@ public class GenerateRope : MonoBehaviour
         jointToEnd.connectedBody = _end.GetComponent<Rigidbody>();
         jointToEnd.anchor = -Vector3.forward;
     }
+    
+   
 }

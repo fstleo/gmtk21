@@ -7,6 +7,7 @@ public class Obstacle : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             ScreenManager.Instance.Open(ScreenType.GameOver);
+            Time.timeScale = 0;
         }
     }
 }

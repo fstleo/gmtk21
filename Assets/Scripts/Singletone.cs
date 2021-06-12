@@ -10,8 +10,8 @@ public class Singletone<T> : MonoBehaviour where T: Singletone<T>
             if (_instance == null)
             {
                 _instance = FindObjectOfType<T>();
+                DontDestroyOnLoad(_instance);
             }
-
             return _instance;
         }
         
