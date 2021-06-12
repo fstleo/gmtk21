@@ -20,6 +20,7 @@ public class ControlledMove : MonoBehaviour
 
     
     private Vector3 _move;
+    private static readonly int Speed = Animator.StringToHash("speed");
 
     private void Awake()
     {
@@ -33,7 +34,7 @@ public class ControlledMove : MonoBehaviour
         float v = Input.GetAxisRaw("Vertical");
 
         _move = new Vector3(h, 0, v).normalized;
-        _animator.SetFloat("Speed", _move.magnitude);
+        _animator.SetFloat(Speed, _move.magnitude);
     }
     
     private void FixedUpdate()
