@@ -25,6 +25,8 @@ public class ScreenManager : Singletone<ScreenManager>
 
     private Screen _currentScreen;
 
+    private ScreenType _previousScreenType;
+    private ScreenType _currentScreenType;
 
     protected override void Awake()
     {
@@ -40,13 +42,21 @@ public class ScreenManager : Singletone<ScreenManager>
         Open(_startScreen);
     }
 
+    public void GoBack()
+    {
+        Open(_previousScreenType);
+    }
+
     public void Open(ScreenType type)
     {
         if (_currentScreen != null)
         {
             _currentScreen.Close();
         }
+
+        _previousScreenType = _currentScreenType;    
         _currentScreen = Instantiate(_screens[type], transform).GetComponent<Screen>();
+        _currentScreenType = type;
         _currentScreen.Open();
     }
 }

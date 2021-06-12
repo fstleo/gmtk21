@@ -19,7 +19,7 @@ public class GamePauseMenu : Screen
 
     private void BackToTheGame()
     {
-        ScreenManager.Instance.Open(ScreenType.Game);
+        ScreenManager.Instance.GoBack();
     }
 
     private void GoToMainMenu()

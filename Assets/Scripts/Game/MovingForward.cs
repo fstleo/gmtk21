@@ -8,9 +8,7 @@ public class MovingForward : MonoBehaviour
 
     [SerializeField]
     private float _speed;
-
-    [SerializeField] private bool _log;
-
+    
     private void Awake()
     {
         _transform = transform;
