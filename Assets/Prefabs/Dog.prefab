@@ -130,9 +130,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10cef2f036284876a926014216571bfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 4.2
   _target: {fileID: 0}
-  _maxDistance: 10
+  _maxDistance: 4
   _animator: {fileID: 0}
 --- !u!54 &1495188342012166109
 Rigidbody:
