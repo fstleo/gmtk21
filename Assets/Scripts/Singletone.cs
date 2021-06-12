@@ -10,10 +10,17 @@ public class Singletone<T> : MonoBehaviour where T: Singletone<T>
             if (_instance == null)
             {
                 _instance = FindObjectOfType<T>();
-                DontDestroyOnLoad(_instance);
+                DontDestroyOnLoad(_instance.gameObject);
             }
             return _instance;
         }
-        
-    } 
+    }
+
+    protected virtual void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
