@@ -37,6 +37,10 @@ public class ControlledMove : MonoBehaviour
         var move = new Vector3(h, 0, v).normalized * (_speed * Time.fixedDeltaTime);
         if ((_rigidbody.position + move - _target.position).sqrMagnitude < _maxDistance * _maxDistance)
         {
+            if ((_rigidbody.position + move).z < -19)
+            {
+                return;
+            }
             _rigidbody.MovePosition(_rigidbody.position + move);
             _transform.forward = move;
         }
