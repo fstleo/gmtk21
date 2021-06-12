@@ -753,6 +753,10 @@ MonoBehaviour:
     prefab: {fileID: 8661437966189129779, guid: be26d0de3837a144e8d9c7ab83f9831f, type: 3}
   - _id: 2
     prefab: {fileID: 6486735767919386233, guid: c1e3e6bdfd5013e4c953bf694ab90d32, type: 3}
+  - _id: 4
+    prefab: {fileID: 6486735767919386233, guid: 357c2d1190ad72f419c30d12c84f09ab, type: 3}
+  - _id: 5
+    prefab: {fileID: 6486735767919386233, guid: 972893dd66b60e34c89f414b8ef5003e, type: 3}
   _startScreen: 0
 --- !u!114 &2008568123
 MonoBehaviour:

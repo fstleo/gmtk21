@@ -1,25 +1,31 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameMenu : Screen
 {
     [SerializeField]
-    private GameObject _pauseText;
+    private Button _pauseButton;
     
     protected override void OnOpen()
     {
+        _pauseButton.onClick.AddListener(OpenPause);
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Time.timeScale = 1f - Time.timeScale;
-            _pauseText.SetActive(Time.timeScale < 0.5f);
+            OpenPause();
         }
     }
     
+    private void OpenPause()
+    {
+        ScreenManager.Instance.Open(ScreenType.GamePause);
+    }
 
     protected override void OnClosed()
     {
+        _pauseButton.onClick.RemoveListener(OpenPause);
     }
 }
