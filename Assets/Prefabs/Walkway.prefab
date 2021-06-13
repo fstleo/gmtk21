@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 8789115756697045378}
   - component: {fileID: 5644960469467285031}
   - component: {fileID: 7616179513967817453}
+  - component: {fileID: 5392485313016626032}
   m_Layer: 0
   m_Name: Walkway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8789115756697045378
 Transform:
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5392485313016626032
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8264921816838378296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 0.31407863, z: 4.3740215}
+  m_Center: {x: -0.013982773, y: 0.019397207, z: 3.1071954}
