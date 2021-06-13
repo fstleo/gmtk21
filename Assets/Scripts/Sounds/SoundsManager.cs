@@ -36,8 +36,8 @@ public class SoundsManager : Singletone<SoundsManager>
 
     public float MusicLevel
     {
-        get => _musicSource.volume / 0.5f;
-        set => _musicSource.volume = value * 0.5f;
+        get => _musicSource.volume / 0.2f;
+        set => _musicSource.volume = value * 0.2f;
     }
 
     [SerializeField] 
