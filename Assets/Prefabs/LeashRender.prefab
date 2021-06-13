@@ -51,7 +51,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6a4e9dbe5673dbc4bbe79ae08f308b89, type: 2}
+  - {fileID: 2100000, guid: e483e6927c6f3ac48bbf8debdc0f3397, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9facddcf7e2c9c444bcc93ac956dc529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LeashStart: {fileID: 0}
-  LeashTarget: {fileID: 0}
-  line: {fileID: 2050752549396459898}
+  _leashStart: {fileID: 0}
+  _leashTarget: {fileID: 0}
+  _line: {fileID: 2050752549396459898}
+  _maxLength: 4
