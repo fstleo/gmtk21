@@ -21,6 +21,9 @@ public class SoundsManager : Singletone<SoundsManager>
 
         public SoundId ID => _id;
     }
+
+    private const string SoundKey = "Sound";
+    private const string MusicKey = "Music";
     
     [SerializeField]
     private AudioSource _soundsSource;
@@ -30,14 +33,22 @@ public class SoundsManager : Singletone<SoundsManager>
 
     public float SoundLevel
     {
-        get => _soundsSource.volume;
-        set => _soundsSource.volume = value;
+        get => PlayerPrefs.GetFloat(SoundKey, 1f);
+        set
+        {
+            PlayerPrefs.SetFloat(SoundKey, value);
+            _soundsSource.volume = value;
+        }
     }
 
     public float MusicLevel
     {
-        get => _musicSource.volume / 0.2f;
-        set => _musicSource.volume = value * 0.2f;
+        get => PlayerPrefs.GetFloat(MusicKey, 0.1f) / 0.1f;
+        set
+        {
+            PlayerPrefs.SetFloat(MusicKey, value * 0.1f);
+            _musicSource.volume = value * 0.1f;
+        }
     }
 
     [SerializeField] 
@@ -48,6 +59,8 @@ public class SoundsManager : Singletone<SoundsManager>
     protected override void Awake()
     {
         base.Awake();
+        _soundsSource.volume = SoundLevel;
+        _musicSource.volume = MusicLevel;
         foreach (var audio in _clips)
         {
             _audioClips.Add(audio.ID, audio.Clips);
