@@ -28,7 +28,7 @@ public class MainScreen : Screen
     private void StartInfiniteMode()
     {
         SceneManager.LoadScene(1);
-        ScreenManager.Instance.Open(ScreenType.Game);
+        ScreenManager.Instance.Open(ScreenType.InfiniteLevel);
         Click();
     }
 
