@@ -24,13 +24,13 @@ public class OptionScreen : Screen
     private void OpenMain()
     {
         ScreenManager.Instance.Open(ScreenType.Main);
-        SoundsManager.Instance.PlaySound(SoundId.Click);
+        Click();
     }
     
     private void SoundChanged(float value)
     {
         SoundsManager.Instance.SoundLevel = value;
-        SoundsManager.Instance.PlaySound(SoundId.Click);
+        Click();
     }
     
     private void MusicChanged(float value)

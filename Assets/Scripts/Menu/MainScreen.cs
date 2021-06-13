@@ -29,12 +29,14 @@ public class MainScreen : Screen
     {
         SceneManager.LoadScene(1);
         ScreenManager.Instance.Open(ScreenType.Game);
+        Click();
     }
 
     private void StartGame()
     {
         SceneManager.LoadScene(2);
         ScreenManager.Instance.Open(ScreenType.Game);
+        Click();
     }
     
     private void Quit()
@@ -45,7 +47,7 @@ public class MainScreen : Screen
     private void OpenOptions()
     {
         ScreenManager.Instance.Open(ScreenType.Options);
-        SoundsManager.Instance.PlaySound(SoundId.Click);
+        Click();
     }
 
     protected override void OnClosed()

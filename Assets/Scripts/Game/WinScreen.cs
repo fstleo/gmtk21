@@ -28,6 +28,8 @@ public class WinScreen : Screen
         SceneManager.LoadScene(0);
         ScreenManager.Instance.Open(ScreenType.Main);
         Time.timeScale = 1f;
+        SoundsManager.Instance.PlaySound(SoundId.Click);
+
     }
     
     private void RestartGame()
@@ -35,6 +37,7 @@ public class WinScreen : Screen
         var nextLevelIndex = SceneManager.GetActiveScene().buildIndex + 1;
         SceneManager.LoadScene(nextLevelIndex);
         ScreenManager.Instance.Open(ScreenType.Game);
+        SoundsManager.Instance.PlaySound(SoundId.Click);
         Time.timeScale = 1f;
     }
 }

@@ -18,4 +18,9 @@ public abstract class Screen : MonoBehaviour
 
     protected abstract void OnOpen();
     protected abstract void OnClosed();
+
+    public void Click()
+    {
+        SoundsManager.Instance.PlaySound(SoundId.Click);
+    }
 }

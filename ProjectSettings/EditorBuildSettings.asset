@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/InfiniteMode.unity
     guid: b9dfcd6fa9da3944792f40859fcbb87d
   - enabled: 1
-    path: Assets/Scenes/LevelTest.unity
-    guid: bfb847ddcb4ad1040ade820b4d4b30ba
-  - enabled: 1
     path: Assets/Scenes/TutorialLevel1.unity
     guid: 0dfcff8eb4ca12145af8fb03ef700d04
   - enabled: 1
@@ -27,14 +24,17 @@ EditorBuildSettings:
     path: Assets/Scenes/TutorialLevel4.unity
     guid: a66f243f6d3c2dd4b96bb7dcb7f5df13
   - enabled: 1
-    path: Assets/Scenes/TutorialLevel5.unity
-    guid: 55dc6cf46b0a2124986ab41b663d56da
-  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 616ecf5db256e644b8ca90f476a234cb
   - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: 9a80cf9fbce021f48a12164d588cbe30
+  - enabled: 1
+    path: Assets/Scenes/2.Sidewalk.unity
+    guid: 196351896e2d9d442b5b2526719f3c93
+  - enabled: 1
+    path: Assets/Scenes/3.Crosswalk.unity
+    guid: 31c6ca2d4189f0b48878aa2cc9330ab1
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: f5a62d92a1feff6498712b9136e33271
