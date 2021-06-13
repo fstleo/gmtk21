@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!54 &-647220942388782777
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6343154662092516635}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &3508724923276458629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6343154662092516635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd076df97a43f2f4898592d0d721ab94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 2.5
+--- !u!1001 &3448954183372574039
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8636298801405370416, guid: d1ac8c0d71184174e83bd8cb5f227cae, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636298801405370416, guid: d1ac8c0d71184174e83bd8cb5f227cae, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636298801405370416, guid: d1ac8c0d71184174e83bd8cb5f227cae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636298801405370416, guid: d1ac8c0d71184174e83bd8cb5f227cae, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636298801405370416, guid: d1ac8c0d71184174e83bd8cb5f227cae, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636298801405370416, guid: d1ac8c0d71184174e83bd8cb5f227cae, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636298801405370416, guid: d1ac8c0d71184174e83bd8cb5f227cae, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636298801405370416, guid: d1ac8c0d71184174e83bd8cb5f227cae, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636298801405370416, guid: d1ac8c0d71184174e83bd8cb5f227cae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636298801405370416, guid: d1ac8c0d71184174e83bd8cb5f227cae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636298801405370416, guid: d1ac8c0d71184174e83bd8cb5f227cae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636298801405370444, guid: d1ac8c0d71184174e83bd8cb5f227cae, type: 3}
+      propertyPath: m_Name
+      value: MovingLamp
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d1ac8c0d71184174e83bd8cb5f227cae, type: 3}
+--- !u!1 &6343154662092516635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8636298801405370444, guid: d1ac8c0d71184174e83bd8cb5f227cae, type: 3}
+  m_PrefabInstance: {fileID: 3448954183372574039}
+  m_PrefabAsset: {fileID: 0}

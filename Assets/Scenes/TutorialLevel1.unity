@@ -613,14 +613,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeashRender
       objectReference: {fileID: 0}
-    - target: {fileID: 2050752549396459898, guid: 07df5264140998447b102c306f8c24e8, type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.r
-      value: 0.4156863
-      objectReference: {fileID: 0}
-    - target: {fileID: 2050752549396459898, guid: 07df5264140998447b102c306f8c24e8, type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.r
-      value: 0.4156863
-      objectReference: {fileID: 0}
     - target: {fileID: 2050752549396459899, guid: 07df5264140998447b102c306f8c24e8, type: 3}
       propertyPath: _line
       value: 
@@ -778,13 +770,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127822806}
-  m_LocalRotation: {x: -0, y: -0.92272633, z: -0, w: 0.3854559}
+  m_LocalRotation: {x: -0, y: -0.91865706, z: -0, w: 0.39505595}
   m_LocalPosition: {x: 13.8, y: -8.945443, z: 22.48}
   m_LocalScale: {x: 32.26459, y: 17.509, z: 6.346832}
   m_Children: []
   m_Father: {fileID: 1684343761}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: -134.656, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -133.461, z: 0}
 --- !u!65 &1127822808
 BoxCollider:
   m_ObjectHideFlags: 0

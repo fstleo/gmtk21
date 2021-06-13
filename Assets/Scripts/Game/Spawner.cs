@@ -12,7 +12,9 @@ public class Spawner : MonoBehaviour
     
     [SerializeField]
     private GameObject _prefab;
-    
+
+    [SerializeField]
+    private float _spawnedLifeTime;
 
     [SerializeField]
     private float _spawnCooldown;
@@ -33,6 +35,6 @@ public class Spawner : MonoBehaviour
     {
         var spawnedGuy = Instantiate(_prefab, Vector3.Lerp(_from.position, _to.position, Random.Range(0f, 1f)), Quaternion.identity);
         spawnedGuy.transform.forward = _from.forward;
-        spawnedGuy.AddComponent<DestroyAfter>();
+        spawnedGuy.AddComponent<DestroyAfter>().Init(_spawnedLifeTime);
     }
 }

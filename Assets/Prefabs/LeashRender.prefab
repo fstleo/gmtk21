@@ -95,15 +95,15 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.3160377, g: 1, b: 0.59074235, a: 1}
+      key1: {r: 0, g: 0.83137256, b: 0.759757, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
+      ctime0: 10601
       ctime1: 65535
       ctime2: 0
       ctime3: 0
@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9facddcf7e2c9c444bcc93ac956dc529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LeashStart: {fileID: 0}
-  LeashTarget: {fileID: 0}
-  line: {fileID: 2050752549396459898}
+  _leashStart: {fileID: 0}
+  _leashTarget: {fileID: 0}
+  _line: {fileID: 2050752549396459898}
+  _maxLength: 4
