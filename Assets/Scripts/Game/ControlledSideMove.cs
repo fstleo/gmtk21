@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ControlledSideMove : MonoBehaviour
@@ -9,7 +10,7 @@ public class ControlledSideMove : MonoBehaviour
     private float _speed;
     
     [SerializeField]
-    private Transform _target;
+    private SideMoving _target;
 
     [SerializeField]
     private float _maxDistance = 5;
@@ -40,16 +41,20 @@ public class ControlledSideMove : MonoBehaviour
 
         _move *= _speed * Time.fixedDeltaTime;
         
-        var targetPosition = _target.position;
+        var targetPosition = _target.transform.position;
         if ((_rigidbody.position + _move - targetPosition).sqrMagnitude < _maxDistance * _maxDistance)
         {
             _rigidbody.MovePosition(targetPosition +
                                     Vector3.ClampMagnitude(_rigidbody.position + _move - targetPosition,
                                         _maxDistance));
+            if (_rigidbody.position.z < -19)
+            {
+                _rigidbody.MovePosition(new Vector3(_rigidbody.position.x, _rigidbody.position.y, -19));
+            }
         }
         else
         {
-            _target.forward = _rigidbody.position - targetPosition;
+            _target.SetForward(_rigidbody.position - targetPosition);
         }
     }
 }

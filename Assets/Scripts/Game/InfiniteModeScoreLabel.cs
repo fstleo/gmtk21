@@ -8,7 +8,7 @@ public class InfiniteModeScoreLabel : MonoBehaviour
     
     private void Update()
     {
-        _scoresLabel.text = InfiniteModeScore.Scores.ToString();
+        _scoresLabel.text = InfiniteModeScore.Scores + " meter" + (InfiniteModeScore.Scores == 1 ? "" : "s");
     }
     
 }

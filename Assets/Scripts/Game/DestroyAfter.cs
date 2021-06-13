@@ -2,7 +2,12 @@ using UnityEngine;
 
 public class DestroyAfter : MonoBehaviour
 {
-    [SerializeField] private float _lifeTime = 10f;
+    private float _lifeTime = 10f;
+
+    public void Init(float lifeTime)
+    {
+        _lifeTime = lifeTime;
+    }
     
     private void Update()
     {
