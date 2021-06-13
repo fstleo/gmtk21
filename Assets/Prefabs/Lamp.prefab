@@ -164,6 +164,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: cbf9b128020452e40ba814a01f47991a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b22c0f5a1dd5b1846a4291b241a6e2d9, type: 2}
+    - target: {fileID: -7511558181221131132, guid: cbf9b128020452e40ba814a01f47991a, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d099b9f2dfdf07a4e9681c361466b663, type: 2}
+    - target: {fileID: -7511558181221131132, guid: cbf9b128020452e40ba814a01f47991a, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 26010f792766dc64e8cc5daed2592088, type: 2}
     - target: {fileID: 919132149155446097, guid: cbf9b128020452e40ba814a01f47991a, type: 3}
       propertyPath: m_Name
       value: streetlight
