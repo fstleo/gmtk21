@@ -22,6 +22,7 @@ public class GameMenu : Screen
     private void OpenPause()
     {
         ScreenManager.Instance.Open(ScreenType.GamePause);
+        Click();
     }
 
     protected override void OnClosed()

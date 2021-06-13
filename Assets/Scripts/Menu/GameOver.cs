@@ -27,6 +27,7 @@ public class GameOver : Screen
         SceneManager.LoadScene("MainMenu");
         ScreenManager.Instance.Open(ScreenType.Main);
         Time.timeScale = 1f;
+        Click();
     }
     
     private void RestartGame()
@@ -34,6 +35,7 @@ public class GameOver : Screen
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         ScreenManager.Instance.Open(ScreenType.Game);
         Time.timeScale = 1f;
+        Click();
     }
 
 }

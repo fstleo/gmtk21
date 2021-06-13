@@ -20,12 +20,14 @@ public class GamePauseMenu : Screen
     private void BackToTheGame()
     {
         ScreenManager.Instance.GoBack();
+        Click();
     }
 
     private void GoToMainMenu()
     {
         ScreenManager.Instance.Open(ScreenType.Main);
         SceneManager.LoadScene("MainMenu");
+        Click();
     }
 
     
