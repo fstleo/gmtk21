@@ -748,10 +748,6 @@ PrefabInstance:
       value: LeashRender
       objectReference: {fileID: 0}
     - target: {fileID: 2050752549396459898, guid: 07df5264140998447b102c306f8c24e8, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e483e6927c6f3ac48bbf8debdc0f3397, type: 2}
-    - target: {fileID: 2050752549396459898, guid: 07df5264140998447b102c306f8c24e8, type: 3}
       propertyPath: m_Parameters.colorGradient.key0.b
       value: 1
       objectReference: {fileID: 0}
